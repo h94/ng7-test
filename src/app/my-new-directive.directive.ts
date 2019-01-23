@@ -10,7 +10,7 @@ export class MyNewDirectiveDirective implements AfterViewInit, OnChanges {
 
   @Output() toggle = new EventEmitter<any>();
 
-  constructor(et: ElementRef) {
+  constructor(et: ElementRef<any>) {
     console.log('appMyNewDirective');
     et.nativeElement.style.backgroundColor = 'yellow';
     console.log(et.nativeElement);
